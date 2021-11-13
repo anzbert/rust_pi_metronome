@@ -1,0 +1,119 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'rust_pi_metronome'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=rust_pi_metronome",
+                    "--package=rust_pi_metronome"
+                ],
+                "filter": {
+                    "name": "rust_pi_metronome",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'rust_pi_metronome'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=rust_pi_metronome",
+                    "--package=rust_pi_metronome"
+                ],
+                "filter": {
+                    "name": "rust_pi_metronome",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'ws2812'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=ws2812",
+                    "--package=rust_pi_metronome"
+                ],
+                "filter": {
+                    "name": "ws2812",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'ws2812'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=ws2812",
+                    "--package=rust_pi_metronome"
+                ],
+                "filter": {
+                    "name": "ws2812",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'blink'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=blink",
+                    "--package=rust_pi_metronome"
+                ],
+                "filter": {
+                    "name": "blink",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'blink'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=blink",
+                    "--package=rust_pi_metronome"
+                ],
+                "filter": {
+                    "name": "blink",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+[package]
+name = "rust_pi_metronome"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ableton-link = { git = "https://github.com/jmyhrman/ableton-link-rs" } # more recent fork than official
+rs_ws281x = { git = "https://github.com/anzbert/rpi-ws281x-rust" }     # fork with updated bindgen
+
+rppal = { version = "*", features = ["hal"] }
+
+# rodio = "*" # for sound
+
+# actix-web = "3" # as a web server?
+
+
+# rust-based LED libraries... couldnt get it to work reliably over SPI:
+# ws2812-spi = { git = "https://github.com/anzbert/ws2812-spi-rs" }
+# smart-leds = "*"
